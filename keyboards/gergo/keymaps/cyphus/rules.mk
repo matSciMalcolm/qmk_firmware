@@ -1,7 +1,11 @@
 #----------------------------------------------------------------------------
 # make gergo:cyphus:dfu
-# Make sure you have dfu-programmer installed!
+# Make sure you have dfu-programmer from Homebrew installed.
 #----------------------------------------------------------------------------
+
+# See
+# https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md#the-rulesmk-file
+# for more information on rules.mk configuration options
 
 # Firmware options
 NKRO_ENABLE         = yes  # Enable NKRO
