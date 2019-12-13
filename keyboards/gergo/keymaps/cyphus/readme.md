@@ -32,7 +32,7 @@ brew tap osx-cross/avr
 brew tap PX4/homebrew-px4
 brew update
 brew install avr-gcc@8
-brew link --force avr-gcce8
+brew link --force avr-gcc@8
 brew install jq dfu-programmer dfu-util gcc-arm-none-eabi avrdude
 ```
 
