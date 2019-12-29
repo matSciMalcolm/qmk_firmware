@@ -16,6 +16,11 @@ EXTRAKEY_ENABLE		= yes
 CONSOLE_ENABLE  	= yes
 COMMAND_ENABLE		= yes
 BOOTMAGIC_ENABLE = lite
+SKIP_VERSION        = yes
+
+# Added by cyphus
+NKRO_ENABLE     = yes  # Enable NKRO
+DEBUG_ENABLE    = yes
 
 DEBOUNCE_TYPE  = eager_pr
 SRC += matrix.c

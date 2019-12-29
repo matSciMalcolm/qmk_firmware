@@ -13,16 +13,6 @@ git clone https://github.com/qmk/qmk_firmware.git
 
 Setup submodules by running `make git-submodule`
 
-### Docker Build
-
-```
-docker pull qmkfm/base_container
-util/docker_build.sh gergo:cyphus
-```
-
-The output hex file can then be found under the `.build` directory in the
-repository root.
-
 ### Local build
 
 Run the following to install the tools
@@ -39,6 +29,16 @@ brew install jq dfu-programmer dfu-util gcc-arm-none-eabi avrdude
 Then you can run `make gergo:cyphus` to build the keyboard firmware under
 `.build`, or run `make gergo:cyphus:flash` to attempt to flash the firmware
 after it's built.
+
+### Docker Build (cannot flash without docker machine, not recommended for macOS)
+
+```
+docker pull qmkfm/base_container
+util/docker_build.sh gergo:cyphus
+```
+
+The output hex file can then be found under the `.build` directory in the
+repository root.
 
 ## Customizing the layout
 

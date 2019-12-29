@@ -32,6 +32,3 @@ endif
 ifeq ($(strip $(DEBUG_BALLER)), yes)
     OPT_DEFS += -DDEBUG_BALLER
 endif
-ifeq ($(strip $(DEBUG_MATRIX)), yes)
-    OPT_DEFS += -DDEBUG_MATRIX
-endif
